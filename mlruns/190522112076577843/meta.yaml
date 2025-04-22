@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/190522112076577843
+creation_time: 1745283153138
+experiment_id: '190522112076577843'
+last_update_time: 1745283153138
+lifecycle_stage: active
+name: IncomePrediction

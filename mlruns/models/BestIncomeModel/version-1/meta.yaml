@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1745283155352
+current_stage: None
+description: ''
+last_updated_timestamp: 1745283155352
+name: BestIncomeModel
+run_id: 4c0e8c9221fe4d6383587b1cf8e97552
+run_link: ''
+source: mlflow-artifacts:/190522112076577843/4c0e8c9221fe4d6383587b1cf8e97552/artifacts/model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/190522112076577843/4c0e8c9221fe4d6383587b1cf8e97552/artifacts/model
+user_id: null
+version: 1

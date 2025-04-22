@@ -1,0 +1,11 @@
+.dvc/
+!.dvc/.gitignore
+!.dvc/config
+!.dvc/plots
+!.dvc/plots/**
+*.dvc
+!data/*.dvc
+data/
+!data/.gitkeep
+
+.metaflow/

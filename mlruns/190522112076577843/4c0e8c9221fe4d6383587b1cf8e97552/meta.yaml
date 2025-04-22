@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/190522112076577843/4c0e8c9221fe4d6383587b1cf8e97552/artifacts
+end_time: 1745283155357
+entry_point_name: ''
+experiment_id: '190522112076577843'
+lifecycle_stage: active
+run_id: 4c0e8c9221fe4d6383587b1cf8e97552
+run_name: capricious-trout-414
+run_uuid: 4c0e8c9221fe4d6383587b1cf8e97552
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745283153240
+status: 3
+tags: []
+user_id: vanisingh

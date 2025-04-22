@@ -11,3 +11,6 @@ data/
 .metaflow/
 mlflow_gcp/sa-private-key.json
 .metaflow/
+mlartifacts/
+mlartifacts/
+mlflow_gcp/sa-private-key.json

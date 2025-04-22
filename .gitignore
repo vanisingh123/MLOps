@@ -9,3 +9,5 @@ data/
 !data/.gitkeep
 
 .metaflow/
+mlflow_gcp/sa-private-key.json
+.metaflow/

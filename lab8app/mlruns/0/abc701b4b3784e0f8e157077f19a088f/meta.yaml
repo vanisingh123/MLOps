@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/vanisingh/Documents/a1.MLOps/lab8app/mlruns/0/abc701b4b3784e0f8e157077f19a088f/artifacts
+end_time: 1745903193627
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: abc701b4b3784e0f8e157077f19a088f
+run_name: mysterious-wasp-907
+run_uuid: abc701b4b3784e0f8e157077f19a088f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745903191633
+status: 3
+tags: []
+user_id: vanisingh

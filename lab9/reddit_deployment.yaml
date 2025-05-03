@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-classifier
+  labels:
+    app: reddit-classifier
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reddit-classifier
+  template:
+    metadata:
+      labels:
+        app: reddit-classifier
+    spec:
+      containers:
+      - name: reddit-classifier
+        image: reddit-classifier:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10

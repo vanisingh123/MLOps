@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-classifier
+  labels:
+    app: reddit-classifier
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reddit-classifier
+  template:
+    metadata:
+      labels:
+        app: reddit-classifier
+    spec:
+      containers:
+      - name: reddit-classifier
+        image: us-west2-docker.pkg.dev/lab-9-reddit-vani/eddit-docker-repo/reddit-classifier:sha256:96a7a8555bfdaba4507c3b443022330bfbb2d077089baf96b591fd5fc34a118d
+
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
